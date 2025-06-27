@@ -199,7 +199,6 @@
         <li><code>SELECT</code> 文によるファイル・フォルダ情報の抽出（名前、サイズ、更新日時、拡張子などのカラム指定可能）</li>
         <li><code>WHERE</code> 句での条件指定（名前の完全一致、部分一致（<code>LIKE</code>）、拡張子指定など）</li>
         <li><code>ORDER BY</code> 句による昇順・降順の並び替え対応</li>
-        <li><code>DELETE</code> 文によるファイル・フォルダの削除（削除前の確認プロンプト付き）</li>
         <li><code>cd</code> コマンドによる検索ディレクトリの変更</li>
         <li><code>pwd</code> コマンドで現在のディレクトリを表示</li>
         <li>ファイル／フォルダの区別を明確にし、探索対象を切り替え可能</li>
@@ -252,11 +251,6 @@
         <p class="code-desc">📏 <strong>バイト数で並び替え</strong></p>
         <pre><code>SELECT name, size FROM file ORDER BY size ASC;</code></pre>
       </div>
-
-      <div class="code-block">
-        <p class="code-desc">🚮 <strong>ファイル、フォルダを削除</strong></p>
-        <pre><code>DELETE name, path From file WHERE name = 'sample.txt';</code></pre>
-      </div>
     </section>
 
     <section>
@@ -287,8 +281,9 @@
     </div>
 
     <p>
-      ※ 一部のウイルス対策ソフトで誤検知される場合があります。<br>
-      当ツールはGo言語で自作されたものであり、不審な動作は一切行いません。
+      ※VirusTotalでスキャン済みです。<br>一部に誤検知がありますが、
+      主要エンジンでは問題ありません。<br>VirusTotalのスキャン結果も同封しております。
+
     </p>
   </aside>
 
